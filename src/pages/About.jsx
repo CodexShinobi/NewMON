@@ -1,0 +1,13 @@
+import React from 'react';
+import { ArrowUpRight, Sparkles } from 'lucide-react';
+import BookingBanner from '../components/BookingBanner';
+const A = '/media/';
+export default function About() {
+  return <main>
+    <section className="page-hero page-hero-about"><div className="page-hero-photo" style={{backgroundImage:`url("${A}IMG_4069.webp")`}}/><div className="page-hero-shade"/><div className="page-hero-copy"><span className="eyebrow">THE STORY BEHIND THE STUDIO</span><h1>Beauty lives<br/>in the <em>details.</em></h1><p>A thoughtful space for creativity, care and self-expression.</p></div><span className="page-hero-index">01 — OUR STORY</span></section>
+    <section className="story-section section-shell"><div className="story-label"><span className="eyebrow">OUR PHILOSOPHY</span><span>01 / 03</span></div><div className="story-content"><h2>A little space<br/>to feel <em>like you.</em></h2><div><p className="large-copy">The Ministry of Nails is built around one simple idea: beauty should feel personal.</p><p>We love the creativity of nail art, the confidence that comes with a fresh set and the little details that make a look yours. Our aim is to offer a welcoming studio where you can explore colour, shape and style while taking a moment for yourself.</p><p>Whether you arrive with a clear inspiration or want to discover something new, we're here to make the experience feel easy, thoughtful and special.</p><a className="underlined-link" href="https://wa.me/919771865006" target="_blank" rel="noreferrer">Come visit us <ArrowUpRight size={15}/></a></div></div></section>
+    <section className="about-photo"><img src={A+'pg-2 (1).webp'} alt="A moment of creativity at The Ministry of Nails" loading="lazy"/><div className="about-photo-copy"><span className="eyebrow">OUR PROMISE</span><h2>Care in every<br/><em>little detail.</em></h2></div><span className="about-photo-caption">A MOMENT FOR YOU <i>·</i> TMN</span></section>
+    <section className="values-section section-shell"><span className="eyebrow">WHAT MATTERS TO US</span><div className="values-grid" data-stagger><article><span>01</span><Sparkles size={19}/><h3>Personal expression</h3><p>Your style is your own. We celebrate the looks, colours and details that make you feel like yourself.</p></article><article><span>02</span><Sparkles size={19}/><h3>Thoughtful care</h3><p>A good nail experience is about more than the final look. It is about feeling welcomed and looked after.</p></article><article><span>03</span><Sparkles size={19}/><h3>Creative detail</h3><p>From a clean finish to a statement design, the little things make the whole look feel considered.</p></article></div></section>
+    <BookingBanner/>
+  </main>;
+}
